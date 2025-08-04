@@ -7,25 +7,25 @@ const features = [
   {
     title: "Chess Lessons",
     description: "Professional chess training for children and beginners, advanced chess strategies for competitive players and chess tournaments and competitions",
-    image: "/assets/images/feature/chess_small.jpg",
+    image: "/assets/images/placeholder.svg",
     delay: "0.2s"
   },
   {
     title: "Music Lessons", 
     description: "Instrumental training (Guitar, Piano, Drums, etc.), music theory and composition and vocal coaching and performance training",
-    image: "/assets/images/feature/music_trans.png",
+    image: "/assets/images/placeholder.svg",
     delay: "0.4s"
   },
   {
     title: "Art Classes",
     description: "Drawing and painting techniques, sculpting and creative crafts and expressive and digital art lessons",
-    image: "/assets/images/feature/art.png",
+    image: "/assets/images/placeholder.svg",
     delay: "0.6s"
   },
   {
     title: "Computer Lessons",
     description: "Basic computer literacy, coding and programming fundamentals and graphic design and multimedia skills",
-    image: "/assets/images/feature/04.png",
+    image: "/assets/images/placeholder.svg",
     delay: "0.8s"
   }
 ]

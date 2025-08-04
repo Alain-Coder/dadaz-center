@@ -16,62 +16,62 @@ const serviceItems = [
   {
     category: 'chess',
     title: 'Chess',
-    image: '/assets/images/service/chess1.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'music',
     title: 'Music',
-    image: '/assets/images/service/music4.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'music',
     title: 'Keyboard',
-    image: '/assets/images/service/Keyboard.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'arts',
     title: 'Arts',
-    image: '/assets/images/product/03.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'computer',
     title: 'Computer',
-    image: '/assets/images/product/04.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'music',
     title: 'Acoustic Guitar',
-    image: '/assets/images/service/acoustic guitar.png'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'music',
     title: 'Drums',
-    image: '/assets/images/service/drums.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'music',
     title: 'Bass Guitar',
-    image: '/assets/images/service/bassguitar.png'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'arts',
     title: 'Painting',
-    image: '/assets/images/product/06.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'arts',
     title: 'Sports',
-    image: '/assets/images/product/07.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'arts',
     title: 'Dancing',
-    image: '/assets/images/product/08.jpg'
+    image: '/assets/images/placeholder.svg'
   },
   {
     category: 'computer',
     title: 'Designing',
-    image: '/assets/images/product/09.jpg'
+    image: '/assets/images/placeholder.svg'
   }
 ]
 

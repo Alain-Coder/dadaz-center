@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Susan Namangale",
     position: "Founder & Managing Director",
-    image: "/assets/images/team/Susan.jpeg",
+    image: "/assets/images/placeholder.svg",
     social: {
       twitter: "https://twitter.com/Susan_GOC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       instagram: "https://www.instagram.com/namangalesusan/",
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Rafik Namangale",
     position: "Chief Operations Officer",
-    image: "/assets/images/team/rafik.jpg",
+    image: "/assets/images/placeholder.svg",
     social: {
       facebook: "https://facebook.com/profile.php?id=100087783802779",
       instagram: "https://www.instagram.com/dareal_rafiq/",
@@ -28,7 +28,7 @@ const teamMembers = [
   {
     name: "Edwin Chitseko",
     position: "Music Teacher",
-    image: "/assets/images/team/Music Teacher.jpg",
+    image: "/assets/images/placeholder.svg",
     social: {
       twitter: "#",
       instagram: "#",
@@ -38,7 +38,7 @@ const teamMembers = [
   {
     name: "Stanford Chiwambo",
     position: "Chess Teacher",
-    image: "/assets/images/team/04.jpg",
+    image: "/assets/images/placeholder.svg",
     social: {
       twitter: "#",
       instagram: "#",

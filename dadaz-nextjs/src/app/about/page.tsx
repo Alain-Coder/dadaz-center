@@ -35,7 +35,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <Image
-                src="/assets/images/about/02.jpg"
+                src="/assets/images/placeholder.svg"
                 alt="About DADAZ Center"
                 width={600}
                 height={400}

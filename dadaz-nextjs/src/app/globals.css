@@ -16,6 +16,10 @@
     @apply box-border;
   }
   
+  html {
+    @apply scroll-smooth;
+  }
+  
   body {
     @apply bg-white text-gray-700 leading-relaxed;
   }
@@ -27,11 +31,11 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block px-12 py-3 bg-orange-400 text-white font-bold rounded-md transition-all duration-300 hover:bg-orange-500 hover:shadow-lg transform hover:-translate-y-1;
+    @apply inline-block px-8 py-3 bg-orange-400 text-white font-bold rounded-md transition-all duration-300 hover:bg-orange-500 hover:shadow-lg transform hover:-translate-y-1;
   }
   
   .section-padding {
-    @apply py-20 lg:py-28;
+    @apply py-16 lg:py-24;
   }
   
   .container-custom {
@@ -127,13 +131,104 @@
 }
 
 .mobile-menu {
-  @apply fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 z-50;
+  @apply fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform transition-transform duration-300 z-50 translate-x-full;
 }
 
 .mobile-menu.open {
   @apply translate-x-0;
 }
 
-.mobile-menu.closed {
-  @apply translate-x-full;
+/* Header styles */
+.header-section {
+  @apply relative z-30;
+}
+
+.header-area {
+  @apply bg-white shadow-sm;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-500;
+}
+
+/* Focus styles for accessibility */
+.focus-visible {
+  @apply outline-none ring-2 ring-orange-400 ring-offset-2;
+}
+
+/* Loading states */
+.loading {
+  @apply opacity-50 pointer-events-none;
+}
+
+/* Image optimization */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Form styles */
+input, textarea, select {
+  @apply transition-all duration-200;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply outline-none ring-2 ring-orange-400 ring-offset-1;
+}
+
+/* Button hover effects */
+button {
+  @apply transition-all duration-200;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-100;
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  @apply bg-gradient-to-br from-orange-400 via-orange-500 to-yellow-500;
+}
+
+/* Text utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Animation utilities */
+.animate-in {
+  @apply opacity-0 translate-y-4;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-in-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-in-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-in-delay-3 {
+  animation-delay: 0.3s;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    @apply hidden;
+  }
 }
