@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DADAZ Center - Next.js Website
+
+A modern, dynamic website for DADAZ Center built with Next.js, TypeScript, Tailwind CSS, and Firebase.
+
+## Features
+
+- 🎨 Modern, responsive design
+- 📝 Dynamic blog with Firebase integration
+- 👤 User authentication
+- ❤️ Like and comment system
+- 🔍 Search and filter functionality
+- 📱 Mobile-first responsive design
+- ⚡ Optimized performance with Next.js
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js 18+ 
+- Firebase project
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up Firebase:
+   - Create a Firebase project at https://console.firebase.google.com
+   - Enable Firestore Database
+   - Enable Authentication (Email/Password)
+   - Copy your Firebase config
+
+4. Configure environment variables:
+   - Copy `.env.local` and add your Firebase configuration
+   - Update the values with your actual Firebase project details
+
+5. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Firebase Setup
+
+1. **Firestore Database:**
+   - Create collections: `blogPosts`, `comments`, `likes`
+   - Set up security rules for read/write access
+
+2. **Authentication:**
+   - Enable Email/Password authentication
+   - Configure authorized domains
+
+3. **Sample Data:**
+   - The app includes sample blog data that can be initialized
+   - Use the `initializeBlogData` utility to populate your database
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app router pages
+├── components/          # Reusable React components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility libraries (Firebase config)
+├── types/              # TypeScript type definitions
+├── data/               # Sample data
+└── utils/              # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **BlogCard**: Displays blog post previews with like/comment counts
+- **CommentSection**: Real-time comments with Firebase integration
+- **AuthModal**: User authentication modal
+- **Header/Footer**: Navigation and site information
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first CSS framework
+- **Firebase**: Backend services (Firestore, Authentication)
+- **Lucide React**: Modern icon library
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Build the project:
+   ```bash
+   npm run build
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Deploy to your preferred platform (Vercel, Netlify, etc.)
 
-## Deploy on Vercel
+3. Configure environment variables in your deployment platform
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.

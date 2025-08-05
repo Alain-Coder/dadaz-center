@@ -82,6 +82,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
+                    <Link href="/blog" className="flex items-center text-gray-300 hover:text-orange-400 transition-colors group">
+                      <ArrowRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/contact" className="flex items-center text-gray-300 hover:text-orange-400 transition-colors group">
                       <ArrowRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                       Contact

@@ -87,6 +87,9 @@ export default function Header() {
                 <Link href="/about" className="text-gray-700 hover:text-orange-400 font-medium transition-colors">
                   About Us
                 </Link>
+                <Link href="/blog" className="text-gray-700 hover:text-orange-400 font-medium transition-colors">
+                  Blog
+                </Link>
                 <Link href="/contact" className="text-gray-700 hover:text-orange-400 font-medium transition-colors">
                   Contact
                 </Link>
@@ -132,6 +135,13 @@ export default function Header() {
                     onClick={toggleMenu}
                   >
                     About Us
+                  </Link>
+                  <Link 
+                    href="/blog" 
+                    className="block py-3 text-gray-700 hover:text-orange-400 font-medium transition-colors border-b border-gray-200"
+                    onClick={toggleMenu}
+                  >
+                    Blog
                   </Link>
                   <Link 
                     href="/contact" 
